@@ -57,7 +57,7 @@ class _AppViewState extends State<AppView> {
                 );
                 break;
               case AuthenticationStatus.unauthenticated:
-                _navigator.pushANdRemoveUntil<void>(
+                _navigator.pushAndRemoveUntil<void>(
                   LoginPage.route(),
                   (route) => false,
                 );
@@ -69,7 +69,7 @@ class _AppViewState extends State<AppView> {
           child:child,
         );
       },
-      onGenerateRoute: (_) => SpashPage.route(),
+      onGenerateRoute: (_) => SplashPage.route(),
     );
   }
 }
