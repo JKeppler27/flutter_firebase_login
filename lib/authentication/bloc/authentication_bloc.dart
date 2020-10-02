@@ -45,6 +45,6 @@ class AuthenticationBloc extends Bloc<AuthenticationEvent, AuthenticationState> 
   ) {
     return event.user != User.empty
       ? AuthenticationState.authenticated(event.user)
-      : AuthenticationState.unauthenticated();
+      : const AuthenticationState.unauthenticated();
   }
 }
